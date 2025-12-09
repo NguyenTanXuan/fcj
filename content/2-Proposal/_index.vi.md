@@ -66,7 +66,7 @@ Về rủi ro, có vài điều đáng để cảnh giác. Sai sót nhỏ trong 
 
 Dẫu vậy, tin tưởng rằng chúng ta đang đi đúng hướng. Mọi thứ đều được xây dựng trên nền tảng giả định rằng khách hàng hiểu rõ đây là phiên bản thử nghiệm (pilot), và chúng ta luôn có giải pháp sao lưu, giám sát và quản lý chi phí cẩn thận. Quan trọng nhất, mỗi rủi ro đều là một bài học quý — giúp ta trưởng thành hơn trong hành trình học cloud và triển khai thật sự.
 
-![E-commerce Website Solution ](/images/proposal.jpg)
+![E-commerce Website Solution ](/images/ss3.jpg)
 
 ### 2 KIẾN TRÚC GIẢI PHÁP / SƠ ĐỒ KIẾN TRÚC
 
@@ -384,4 +384,6 @@ Một sản phẩm sẽ được coi là chấp nhận được khi đáp ứng 
 - Nếu phát hiện vấn đề → Sẽ gửi thông báo từ chối kèm theo phản hồi.
 - Các bản sửa lỗi sẽ được áp dụng và phiên bản sửa đổi sẽ được gửi lại để xem xét.
 - Nếu không nhận được phản hồi vào cuối thời gian xem xét → Sản phẩm được coi là đã được chấp nhận.
-- Sau khi hoàn thành mỗi cột mốc, nhóm sẽ nộp các sản phẩm và tài liệu.
+- Sau khi hoàn thành mỗi cột mốc, nhóm sẽ nộp các sản phẩm và tài liệu.<br>
+[Tải file .docx](/static/files/Proposal_FFF.docx)
+

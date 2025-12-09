@@ -61,7 +61,7 @@ Potential risks include IAM misconfigurations, accidental overspending due to un
 
 Despite these risks, the project is built on clear expectations: this is a pilot environment, with layered monitoring, backup, and cost-management strategies in place. Every challenge is considered an opportunity to learn and grow in cloud engineering.
 
-![E-commerce Website Solution ](/images/proposal.jpg)
+![E-commerce Website Solution ](/images/ss3.jpg)
 
 ### 2. SOLUTION ARCHITECTURE
 #### 2.1 Technical Architecture Diagram
@@ -332,4 +332,5 @@ A deliverable will be considered acceptable when it meets the following criteria
 -	If issues are found → A rejection notice will be issued with feedback.
 -	Fixes will be applied and a revised version will be resubmitted for review.
 -	If no response is received by the end of the review period → Deliverable is deemed accepted.
--	After completing each milestone, the team submits the deliverables and documentation.
+-	After completing each milestone, the team submits the deliverables and documentation.<br>
+[Tải file .docx](/static/files/Proposal_FFF.docx)

@@ -3,7 +3,7 @@ title: "Event 3"
 date: 2025-11-29
 weight: 3
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 4.3 </b> "
 ---
 
 # Lessons Learned: AWS Cloud Mastery Series #3 — AWS Well-Architected Security Pillar
