@@ -15,21 +15,21 @@
     <title>Bản đề xuất :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1765270879" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1765270879" rel="stylesheet">
-    <link href="../../css/hybrid.css?1765270879" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1765270879" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1765270879" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1765270879" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1765270879" rel="stylesheet">
-    <link href="../../css/theme.css?1765270879" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1765270879" rel="stylesheet">
+    <link href="../../css/nucleus.css?1765271136" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765271136" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765271136" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765271136" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765271136" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765271136" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765271136" rel="stylesheet">
+    <link href="../../css/theme.css?1765271136" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765271136" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1765270879" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1765271136" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1765270879"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1765271136"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1765270879"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1765270879"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1765271136"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765271136"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nguyentanxuan.github.io\/fcj\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1765270879"></script>
+<script type="text/javascript" src="../../js/search.js?1765271136"></script>
  
   </div>
 
@@ -953,6 +953,7 @@
         <li><a href="#4-chi-tiết-chi-phí-aws-dự-kiến-theo-dịch-vụ">4. CHI TIẾT CHI PHÍ AWS DỰ KIẾN THEO DỊCH VỤ</a></li>
         <li><a href="#5-đội-ngũ">5. Đội Ngũ</a></li>
         <li><a href="#6-nguồn-lực--ước-tính-chi-phí">6. NGUỒN LỰC &amp; ƯỚC TÍNH CHI PHÍ</a></li>
+        <li><a href="#7-chấp-nhận">7. CHẤP NHẬN</a></li>
       </ul>
     </li>
   </ul>
@@ -1050,7 +1051,7 @@ Tích hợp Amazon Bedrock để xử lý hình ảnh và AI tạo sinh cho ứn
 <p>Observability &amp; Security Layer:
 CloudWatch, SNS giám sát, gửi cảnh báo và thông báo khi có sự cố; đảm bảo hệ thống vận hành ổn định.</p>
 <p>Dưới đây là sơ đồ luồng dữ liệu :</p>
-<img src="../../images/2-Proposal/OJT- ss3.drawio.png"/>
+<img src="../../images/2-Proposal/OJT-SS4.png"/>
 <h4 id="22-kế-hoạch-kỹ-thuật">2.2 Kế hoạch kỹ thuật</h4>
 <p>Trong dự án FFF, nhóm triển khai sẽ phát triển và quản lý hạ tầng bằng các tập lệnh tự động (Infrastructure as Code) sử dụng AWS CloudFormation. Cách làm này giúp việc triển khai hệ thống lên các tài khoản AWS trở nên nhanh chóng, lặp lại và dễ kiểm soát hơn, đồng thời giảm thiểu sai sót thủ công trong quá trình cài đặt.</p>
 <p>Các thành phần chính của hạ tầng – bao gồm S3, Lambda, API Gateway, RDS, VPC, Cognito, và CloudWatch – sẽ được định nghĩa và khởi tạo thông qua các mẫu CloudFormation. Mọi thay đổi về cấu hình sẽ được lưu lại trong GitLab để đảm bảo tính minh bạch và khả năng phục hồi nếu cần quay lại phiên bản trước.</p>
@@ -1249,7 +1250,6 @@ Dự án hiện đã sẵn sàng mở rộng người dùng thật và tích h�
 <li>IAM:               Free</li>
 <li>CloudWatch:        $2.00</li>
 <li>SNS:               $0.10</li>
-<li>SES:               $0.20</li>
 <li>CloudFormation:    Free</li>
 <li>GitLab CI/CD  :    $3.00</li>
 <li>WS Config / Setup &amp; Test migration tools $5.00 (1 lần)</li>
@@ -1421,6 +1421,27 @@ Email/Thông tin liên hệ : <a href="mailto:ducdmse182938@fpt.edu.vn">ducdmse1
       </tr>
   </tbody>
 </table>
+<h3 id="7-chấp-nhận">7. CHẤP NHẬN</h3>
+<p>Vì dự án này hiện đang ở giai đoạn trình bày và chưa được khách hàng chính thức đánh giá, nên quy trình chấp nhận sau đây được đề xuất cho các giai đoạn phân phối trong tương lai:</p>
+<h4 id="71-tiêu-chí-chấp-nhận-đề-xuất">7.1 Tiêu chí Chấp nhận (Đề xuất)</h4>
+<p>Một sản phẩm sẽ được coi là chấp nhận được khi đáp ứng các tiêu chí sau:</p>
+<ul>
+<li>Các tính năng chức năng hoạt động như đã chỉ định (xác thực, quản lý công thức, tính năng xã hội, chức năng AI).</li>
+<li>Tất cả các API đều phản hồi chính xác và tích hợp với các dịch vụ AWS (Lambda, API Gateway, RDS, S3).</li>
+<li>Đáp ứng các yêu cầu bảo mật (xác minh JWT, HTTPS, kiểm soát truy cập, mã hóa dữ liệu).</li>
+<li>Giao diện người dùng hoạt động như mong đợi trên các thiết bị được hỗ trợ.</li>
+<li>Không xuất hiện lỗi nghiêm trọng nào trong quá trình thực hiện kiểm thử.</li>
+</ul>
+<h4 id="72-quy-trình-chấp-nhận">7.2 QUY TRÌNH CHẤP NHẬN</h4>
+<ul>
+<li>Thời gian xem xét: 8 ngày làm việc để đánh giá và kiểm thử.</li>
+<li>Nếu được chấp nhận → Sản phẩm được ký duyệt.</li>
+<li>Nếu phát hiện vấn đề → Sẽ gửi thông báo từ chối kèm theo phản hồi.</li>
+<li>Các bản sửa lỗi sẽ được áp dụng và phiên bản sửa đổi sẽ được gửi lại để xem xét.</li>
+<li>Nếu không nhận được phản hồi vào cuối thời gian xem xét → Sản phẩm được coi là đã được chấp nhận.</li>
+<li>Sau khi hoàn thành mỗi cột mốc, nhóm sẽ nộp các sản phẩm và tài liệu.<br></li>
+</ul>
+<p><a href="../../static/files/Proposal_FFF.docx">Tải file .docx</a></p>
 
 
 
@@ -2089,19 +2110,19 @@ Email/Thông tin liên hệ : <a href="mailto:ducdmse182938@fpt.edu.vn">ducdmse1
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1765270879"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1765270879"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1765270879"></script>
-    <script src="../../js/jquery.sticky.js?1765270879"></script>
-    <script src="../../js/featherlight.min.js?1765270879"></script>
-    <script src="../../js/highlight.pack.js?1765270879"></script>
+    <script src="../../js/clipboard.min.js?1765271136"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765271136"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765271136"></script>
+    <script src="../../js/jquery.sticky.js?1765271136"></script>
+    <script src="../../js/featherlight.min.js?1765271136"></script>
+    <script src="../../js/highlight.pack.js?1765271136"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1765270879"></script>
-    <script src="../../js/learn.js?1765270879"></script>
-    <script src="../../js/hugo-learn.js?1765270879"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765271136"></script>
+    <script src="../../js/learn.js?1765271136"></script>
+    <script src="../../js/hugo-learn.js?1765271136"></script>
 
-    <link href="../../mermaid/mermaid.css?1765270879" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1765270879"></script>
+    <link href="../../mermaid/mermaid.css?1765271136" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765271136"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
