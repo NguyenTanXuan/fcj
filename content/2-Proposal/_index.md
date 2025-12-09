@@ -1,115 +1,335 @@
 ---
 title: "Proposal"
-date: "`r Sys.Date()`"
+date: 2025-10-01
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# AWS First Cloud AI Journey – Project Plan
+## Online Shopping Website: Furious Five Fashion (FFF)
+## AWS & AI-Powered E-commerce Website Solution
+### 1. Background and Motivation
+#### 1.1 Executive Summary
 
-### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+The client is a small-sized business specializing in fashion products for young customers. They aim to build an online clothing e-commerce website using AWS and AI, with the ability to scale flexibly, support long-term growth, and optimize operational costs.
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+The goal of this project is to shift from traditional manual management on physical servers to a flexible, intelligent, and cost-efficient cloud-based model. AWS enables the system to scale at any time, maintain fast access speed, and allow the business to focus on product development instead of infrastructure.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+The system is designed to support end-to-end e-commerce operations: hosting and distributing web content, managing product and order databases, supporting payments, and monitoring system performance. Everything aims toward stability, security, and long-term scalability.
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+The Furious Five implementation team will accompany the client throughout the process—advising, designing the architecture, and configuring key AWS services such as Lambda, S3, DynamoDB, CloudFront, and Route 53. Beyond building the system, they also help optimize costs, ensure security, and train the internal team to manage the infrastructure effectively.
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+This project is not just a technical plan—it marks an important step in the company’s digital transformation journey.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+#### 1.2 Project Success Criteria
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+To ensure the success of the Furious Five Fashion project, the following clear and measurable criteria must be met, representing both business goals and technical effectiveness:
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+System Performance
+The website must maintain response times under 2 seconds for all user actions, even during peak hours.
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+Availability
+The system must achieve 99.9% uptime, monitored and automatically reported through services like CloudWatch.
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+Scalability
+AWS infrastructure must scale automatically when traffic increases by at least 2× without causing service disruption.
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+Cost Optimization
+Monthly operating costs must remain under 30% of the projected budget, supported by AWS cost-monitoring tools such as Cost Explorer and Trusted Advisor.
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+Security
+No data leaks or unauthorized access. All customer data must be protected by AWS security standards (IAM policies, encryption, HTTPS, etc.).
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+Deployment & Operations
+Infrastructure must be fully deployed within 4 weeks, with complete documentation so the internal team can manage the environment effectively.
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+Training & Knowledge Transfer
+The internal technical team must be trained to confidently maintain, monitor, and secure the system without depending entirely on external support.
 
-Total: $0.7/month, $8.40/12 months
+#### 1.3 Assumptions
+To ensure alignment and smooth execution of the FFF project, the following assumptions have been made:
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+The team already has access to AWS accounts with required permissions and has basic knowledge of essential AWS services such as Lambda, S3, IAM, and Route 53. Stable Internet connectivity is assumed since all infrastructure runs in the cloud. The team is also aware of basic security and compliance requirements before deployment.
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+The project depends on multiple external factors: stable service availability in the selected AWS region, smooth domain routing via Route 53, and effective collaboration between development teams to ensure the web application operates properly in the cloud environment.
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+The project is part of an internship, so the budget is limited—favoring free-tier usage and low-cost service configurations. Due to limited experience and tight timelines, the chosen architecture remains simple and practical.
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+Potential risks include IAM misconfigurations, accidental overspending due to unused resources, AWS regional outages, service incompatibilities, or limited expertise in troubleshooting cloud systems.
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+Despite these risks, the project is built on clear expectations: this is a pilot environment, with layered monitoring, backup, and cost-management strategies in place. Every challenge is considered an opportunity to learn and grow in cloud engineering.
+
+![E-commerce Website Solution ](/images/proposal.jpg)
+
+### 2. SOLUTION ARCHITECTURE
+#### 2.1 Technical Architecture Diagram
+
+The following architecture is designed for FFF, deployed in AWS Region Singapore (ap-southeast-1). It emphasizes flexibility, security, automation, scalability, and simplicity—appropriate for an internship-level project while following AWS best practices.
+
+The system follows a multi-layer design consisting of six key components:
+
+Frontend & Security Layer
+Users access the website through Route 53. Incoming traffic is protected with AWS WAF and optimized via CloudFront CDN. Source code is managed and deployed through GitLab CI/CD using CloudFormation templates.
+
+API & Compute Layer
+API Gateway routes all requests to AWS Lambda, which handles application logic. Cognito manages authentication and access control.
+
+Storage Layer
+Two S3 buckets store static content (StaticData) and user uploads.
+
+Data Layer
+DynamoDB stores product metadata and unstructured data. IAM ensures secure interactions between components.
+
+AI Layer
+Amazon Rekognition and Amazon Bedrock power image processing and generative AI features.
+
+Observability & Security Layer
+CloudWatch, SNS, and SES provide monitoring, alerting, and system notifications.
+
+#### 2.2 Technical Implementation Plan
+
+Infrastructure will be managed and deployed using Infrastructure as Code (IaC) with AWS CloudFormation to ensure repeatability, stability, and ease of maintenance.
+Key AWS components—S3, Lambda, API Gateway, DynamoDB, Cognito, and CloudWatch—will be defined entirely through CloudFormation templates stored in GitLab for version control and rollback capability.
+
+Sensitive configurations such as IAM permissions or WAF rules require approval before deployment and follow the internal governance process with review and validation.
+
+All critical system paths—from authentication to data processing—are covered by automated and manual test cases to ensure stability, security, and scalability.
+
+This technical plan enables the FFF team to deploy and manage a professional cloud environment, learning real DevOps and AWS best practices.
+
+#### 2.3 Project Plan
+
+The project follows Agile Scrum over 3 months, divided into 4 sprints.
+
+**Sprint Structure**
+
+* Sprint Planning
+
+  * Setup AWS foundational services (S3, Route 53, IAM)
+
+  * Configure security (WAF, CloudFront)
+
+  * Integrate backend (Lambda, API Gateway, DynamoDB)
+
+  * Testing, optimization, and demo preparation
+
+* Daily Stand-up
+30-minute updates to address blockers and track status.
+
+* Sprint Review
+Review deliverables, demo on real AWS environment, fix issues.
+
+* Retrospective
+Improve DevOps workflows and automation pipeline.
+
+**Team Roles**
+
+* Product Owner: Business alignment, backlog prioritization
+
+* Scrum Master: Coordination, Agile process enforcement
+
+* DevOps/Technical Team: Backend, infrastructure, CI/CD
+
+* Mentor / AWS Partner: Architecture validation, AI testing, cost & security review
+
+**Communication Rhythm**
+
+* Daily Stand-ups (23:00)
+
+* Weekly Sync
+
+* End-of-Sprint Demo
+
+**Knowledge Transfer**
+After the final sprint, the technical team will deliver hands-on training on operations, monitoring (Budgets, CloudWatch), scaling, and recovery procedures.
+
+#### 2.4 Security Considerations
+
+Access Management <br>
+MFA for admin users; IAM roles with least privilege; auditing through CloudTrail.
+
+Infrastructure Security<br>
+Even without a dedicated VPC, services are restricted using resource policies; all public endpoints use HTTPS.
+
+Data Protection<br>
+S3 and DynamoDB encryption; TLS data transfer; manual periodic backups.
+
+Detection & Monitoring<br>
+CloudTrail, Config, and CloudWatch for visibility; GuardDuty for threat detection.
+
+Incident Response<br>
+Clear incident workflows with log collection, analysis, and periodic simulations.
+
+### 3. PROJECT ACTIVITIES & DELIVERABLES
+#### 3.1 Activities & Deliverables Table
+
+|Phase  | Timeline  | Activities  |  Deliverables  | Effort(day)  |  
+|---------------|:--------------------:|-----------------------------|------------------------|:---:|
+| Infrastructure Setup  |Week <br> 1 – 2    | Requirements gathering, architecture design, AWS configuration (S3, CloudFront, API, Lambda, DynamoDB, Cognito), GitLab CI/CD setup    | Completed AWS Architecture, Ready Infrastructure, Active CI/CD    |   10    |
+|Frontend Development   |  Week 3–5  | UI/UX design, FE pages (Home, Catalog, Product Detail, Cart, Checkout), API integration | Completed FE (Dev), Frontend connected to API  |15 | 
+| Backend & Database  | Week 6–9   | Lambda APIs, DynamoDB setup, order/user/product logic, Cognito IAM setup | Stable API, validated data flow, full FE-BE integration  |20 | 
+| Testing & Validation  | Week <br> 10–11   | Functional, security, performance testing, integration testing | Test Report, Validated System  | 5| 
+| Production Launch  | Week 12   |Deploy to production, domain & SSL setup, training & handover  | Live FFF Website, Documentation Package  | 5|
+
+#### 3.2 Out of Scope
+
+Mobile applications (iOS/Android)
+
+Real inventory/logistics integration
+
+Advanced admin dashboards
+
+CRM/ERP integrations
+
+Advanced AWS security services
+
+Real payment gateway integration
+
+Multilanguage & multicurrency
+
+#### 3.3 Go-Live Roadmap
+
+Phase 1 – POC
+Basic FE, S3 hosting, API integration, sample data storage, CloudFront optimization.
+
+Phase 2 – UAT
+Cognito auth, sandbox payment, CloudWatch monitoring, internal user testing.
+
+Phase 3 – Production Deployment
+Route 53 domain setup, SSL via ACM, WAF protection, CloudFront refinement.
+
+Phase 4 – Stabilization & Optimization
+Cost optimization, performance improvements, backup strategy, documentation updates.
+
+### 4. AWS COST ESTIMATION
+
+Estimated monthly cost: $30–35 USD
+
+- Route 53 :         $1.00
+- AWS WAF :          $5.00
+- CloudFront:        $3.90
+- S3 (StaticData) :  $0.50
+- S3 (Uploads):      $0.75
+- S3 (Bucket):       $0.75
+- AWS Lambda:        $0.25
+- API Gateway:       $3.50
+- Amazon Bedrock:    $3.00
+- DynamoDB:          $1.00
+- IAM:               Free
+- CloudWatch:        $2.00
+- SNS:               $0.10
+- SES:               $0.20
+- CloudFormation:    Free
+- GitLab CI/CD  :    $3.00
+- WS Config / Setup & Test migration tools $5.00 (1 lần)
+- Estimated monthly total cost: ~ $30.00 – $35.00 USD
+
+Cost assumptions:
+
+Region: Singapore
+
+500–1000 users/month
+
+Low traffic
+
+Data < 100GB
+
+Free Tier active for 12 months
+
+Cost optimizations recommended:
+
+S3 Intelligent-Tiering
+
+CloudWatch log retention 14–30 days
+
+AWS Budgets alert at $40
+
+Consider Lambda Savings Plan for long-term workloads
+
+### 5. Project Team
+
+**Project Stakeholders** <br>
+Name: Van Hoang Kha <br>
+Title: Support Teams <br>
+Description: is the Executive support person responsible for overall supervision of the FCJ internship program<br>
+Email/Contact information: Khab9thd@gmail.com
+
+**Partner Project Team** (Furious Five Internship Team)<br>
+Name: Duong Minh Duc <br>
+Title: Project Team Leader<br>
+Description: Manage progress, coordinate work between the team and mentor, Manage AWS infrastructure deployment (S3, Lambda, IAM)<br>
+Email/Contact information: ducdmse182938@fpt.edu.vn
+
+Name: Quach Nguyen Chi Hung<br>
+Title: Member<br>
+Description: In charge of UI/UX and user interface<br>
+Email/Contact information: bacon3632@gmail.com
+Name: Nguyen Tan Xuan<br>
+Title: Member<br>
+Description: Responsible for Backend and server logic processing<br>
+Email/Contact information: xuanntse184074@fpt.edu.vn<br>
+
+Name: Nguyen Hai Dang<br>
+Title: Member<br>
+Description: Manage AWS infrastructure deployment (S3, Lambda, IAM) and AI chat bot integration<br>
+Email/Contact information: dangnhse184292@fpt.edu.vn
+
+Name: Pham Le Huy Hoang<br>
+Title: Member<br>
+Description: Testing, quality assurance and GitLab CI/CD integration, and AI chat bot integration<br>
+Email/Contact information: hoangplhse182670@fpt.edu.vn
+
+**Contact Complaints / Escalation Project Project**
+
+Name: Duong Minh Duc<br>
+Title: Project Team Leader<br>
+Description: Represent the internship team to contact the mentor and sponsor directly<br>
+Email/Contact information: ducdmse182938@fpt.edu.vn
+
+### 6. RESOURCES & COST ESTIMATES
+#### Resources
+
+| Roles | Responsibilities| Rate (USD)/Hour|
+| ------------------ | ------------------------------------- | :------------------: |
+|Solution Architect(1)|Design overall solutions, ensure technical feasibility, select appropriate AWS services | 35|
+|Cloud Engineer(2)|Implement AWS infrastructure, configure services (S3, IAM...), test and optimize systems| 20 |
+|Project Manager (1)|Monitor progress, coordinate teams, manage project scope and risks. |15 |
+|Support / Documentation (1) |Prepare handover documents, user manuals, and final reports. | 10|
+
+#### Estimate costs by project phase
+
+| Project phase | Solution Architect (hrs) | 2 Engineers (hrs) | Project Manager (hrs) | Project Management / Support (hrs)| Total Hours|
+|-----------------------------------------------------|:---------:|:----------:|:--------------:|:--------------:|:-------------:|
+|Survey & Solution Design| 53 | 40 | 13 | 13 |119|
+|Implementation & Testing|67 |160 | 21 |19 |267 |
+|Support / Documentation| 27 |53 |21 | 19 | 120 |
+|Total Hours|147 | 253| 55 |51 | 506|
+|Total Amount |$5145 |$5060 |$825|$510 |$11540 |
+
+#### Cost Contribution Allocation
+| Party | Contribution (USD) | % Contribution |
+|----------------------------------------|:--------:|:--------:|
+|Customers |4616 |40% |
+|Partners (Furious Five) |2308 |20% |
+| AWS |4616 | 40%|  
+
+### 7.	ACCEPTANCE
+
+Since this project is currently at the presentation stage and has not yet been formally evaluated by a customer, the following acceptance process is proposed for future delivery phases:
+
+#### 7.1 Acceptance Criteria (Proposed)
+A deliverable will be considered acceptable when it meets the following criteria:
+-	Functional features work as specified (authentication, recipe management, social features, AI functions).
+-	All APIs respond correctly and integrate with AWS services (Lambda, API Gateway, RDS, S3).
+-	Security requirements are met (JWT verification, HTTPS, access control, data encryption).
+-	UI works as expected on supported devices.
+-	No critical errors appear during test execution.
+#### 7.2 ACCEPTANCE PROCESS
+-	Review period: 8 business days for evaluation and testing.
+-	If accepted → Deliverable is signed off.
+-	If issues are found → A rejection notice will be issued with feedback.
+-	Fixes will be applied and a revised version will be resubmitted for review.
+-	If no response is received by the end of the review period → Deliverable is deemed accepted.
+-	After completing each milestone, the team submits the deliverables and documentation.

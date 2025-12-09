@@ -1,34 +1,33 @@
 ---
-title: "Worklog Tuần 6"
+title: "Week 6 Worklog"
 date: "`r Sys.Date()`"
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-### Mục tiêu Tuần 6:
+### Week 6 Objectives:
 
-* Triển khai và kiểm thử các API backend cho website thương mại điện tử bán quần áo.  
-* Tích hợp AWS S3 để lưu trữ file và quản lý hình ảnh sản phẩm.  
-* Thiết lập pipeline CI/CD cho quy trình triển khai tự động.
+* Implement and test backend API endpoints for the clothing e-commerce website.
+* Integrate AWS S3 for file storage and manage product images.
+* Set up CI/CD pipeline for automated deployment.
 
-### Các nhiệm vụ cần thực hiện trong tuần:
+### Tasks to be carried out this week:
+| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 1   | - Implement product CRUD API endpoints <br> - Test API using Postman or Insomnia <br> - Validate request/response data                                                                                 | 13/10/2025 | 13/10/2025      | Spring Boot Documentation                 |
+| 2   | - Set up AWS S3 bucket for product images <br> - Configure bucket policies and CORS <br> - Implement image upload/download functionality                                                               | 14/10/2025 | 14/10/2025      | AWS S3 Documentation                     |
+| 3   | - Integrate file upload with product creation <br> - Handle image resizing and optimization <br> - Test image upload flow end-to-end                                                                   | 15/10/2025 | 15/10/2025      | ImageIO, AWS SDK Documentation           |
+| 4   | - Set up GitHub Actions for CI/CD <br> - Configure automated testing <br> - Create deployment workflow                                                                                                 | 16/10/2025 | 16/10/2025      | GitHub Actions Documentation             |
+| 5   | - Deploy application to AWS EC2 <br> - Configure load balancer and auto-scaling <br> - Set up monitoring with CloudWatch                                                                              | 17/10/2025 | 17/10/2025      | AWS EC2, CloudWatch Documentation        |
 
-| Ngày | Nhiệm vụ                                                                                                                                                                                        | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                      |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------- | ---------------------------------------- |
-| 1    | - Triển khai API CRUD cho sản phẩm <br> - Kiểm thử API bằng Postman hoặc Insomnia <br> - Validate dữ liệu request/response                                                                     | 13/10/2025   | 13/10/2025       | Tài liệu Spring Boot                     |
-| 2    | - Tạo AWS S3 bucket cho hình ảnh sản phẩm <br> - Cấu hình bucket policies và CORS <br> - Triển khai chức năng upload/download hình ảnh                                                         | 14/10/2025   | 14/10/2025       | Tài liệu AWS S3                          |
-| 3    | - Tích hợp upload file trong chức năng tạo sản phẩm <br> - Xử lý resize và tối ưu hình ảnh <br> - Kiểm thử toàn bộ quy trình upload hình                                                       | 15/10/2025   | 15/10/2025       | ImageIO, AWS SDK Documentation           |
-| 4    | - Thiết lập GitHub Actions cho CI/CD <br> - Cấu hình automated testing <br> - Tạo workflow triển khai tự động                                                                                 | 16/10/2025   | 16/10/2025       | Tài liệu GitHub Actions                  |
-| 5    | - Triển khai ứng dụng lên AWS EC2 <br> - Cấu hình load balancer và auto-scaling <br> - Thiết lập giám sát bằng CloudWatch                                                                      | 17/10/2025   | 17/10/2025       | Tài liệu AWS EC2, CloudWatch             |
+### Week 6 Achievements:
 
-### Kết quả đạt được trong Tuần 6:
-
-* Hoàn thành triển khai đầy đủ các chức năng CRUD cho quản lý sản phẩm.  
-* Tích hợp AWS S3 để lưu trữ hình ảnh an toàn và mở rộng.  
-* Cấu hình chính sách bucket để đảm bảo truy cập bảo mật.  
-* Xây dựng pipeline CI/CD tự động bằng GitHub Actions.  
-* Triển khai ứng dụng lên AWS EC2 với giám sát đầy đủ.  
-* Thực hiện tối ưu hóa hình ảnh giúp cải thiện hiệu năng hệ thống.  
-* Thiết lập automated testing để đảm bảo chất lượng mã nguồn.  
-* Cấu hình CloudWatch để giám sát và cảnh báo hoạt động của ứng dụng.
+* Successfully implemented complete CRUD operations for product management.
+* Integrated AWS S3 for secure and scalable image storage.
+* Configured proper bucket policies for secure file access.
+* Built automated CI/CD pipeline using GitHub Actions.
+* Deployed application to AWS EC2 with proper monitoring.
+* Implemented image optimization to improve performance.
+* Set up automated testing pipeline to ensure code quality.
+* Configured CloudWatch for application monitoring and alerting.

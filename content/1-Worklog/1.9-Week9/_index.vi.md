@@ -23,7 +23,7 @@ pre: " <b> 1.9. </b> "
 | 6   | - Workflow Orchestration with AWS Step Functions <br> - Storage Performance Workshop  | 31/10/2025   | 31/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Kết quả đạt được tuần 8:
+### Kết quả đạt được tuần 9:
 
 **Containerization with Docker**
 * Build và push Docker image cho backend + frontend, triển khai trên EC2.

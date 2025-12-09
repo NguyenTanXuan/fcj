@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-### Week 8 Objectives:
+### Week 9 Objectives:
 
 * Continue learning and familiarizing yourself with AWS services
 * Learn and implement projects
@@ -21,7 +21,7 @@ pre: " <b> 1.9. </b> "
 | 6   | - Workflow Orchestration with AWS Step Functions <br> - Storage Performance Workshop     | 31/10/2025 | 31/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Week 8 Achievements:
+### Week 9 Achievements:
 
 **Containerization with Docker**
 * Build and push Docker images for backend + frontend, deploy on EC2.

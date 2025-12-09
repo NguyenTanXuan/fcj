@@ -10,11 +10,12 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 2:** [Learn basic AWS, get familiar and practice with Console & CLI](1.2-week2/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 3:** [Learn AWS services, EC2, and practice deploying resources](1.3-week3/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 4:** [Review knowledge, prepare input for system architecture design](1.4-week4/)
+
 
 **Week 5:** [Begin designing system architecture and integrating AWS services](1.5-week5/)
 
@@ -24,10 +25,10 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 8:** [Shopping cart and payment module development; frontend API integration](1.8-week8/)
 
-**Week 9:** [Start migrating database from MSSQL to DynamoDB; design DynamoDB tables](1.9-week9/)
+**Week 9:** [Progress with great strides of the Sales Web Project](1.9-week9/)
 
-**Week 10:** [Complete migration to DynamoDB; update APIs and optimize performance](1.10-week10/)
+**Week 10:** [Understand and apply AWS to the Sales Web Project](1.10-week10/)
 
 **Week 11:** [Optimize APIs, implement search, filter, sort features; documentation](1.11-week11/)
 
-**Week 12:** [Finalize backend with DynamoDB, prepare demo and deployment documentation](1.12-week12/)
+**Week 12:** [Finalize backend, prepare demo and deployment documentation](1.12-week12/)

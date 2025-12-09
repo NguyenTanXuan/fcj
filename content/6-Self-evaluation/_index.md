@@ -12,21 +12,20 @@ I participated in **the First Cloud Journey program, which strengthened my commu
 
 In terms of professionalism, I consistently worked to complete all assigned tasks to a high standard, followed workplace guidelines, and actively collaborated with colleagues to improve team efficiency.
 
-| STT | Tiêu chí                                 | Mô tả                                                                                             | Tốt | Khá | TB |
-| --- | ----------------------------------------- | ------------------------------------------------------------------------------------------------- | --- | --- | --- |
-| 1   | **Kiến thức & kỹ năng chuyên môn**        | Hiểu đúng lĩnh vực, vận dụng vào thực tiễn, thành thạo công cụ, chất lượng công việc             | ✅  | ☐  | ☐  |
-| 2   | **Khả năng học hỏi**                      | Tiếp thu kiến thức mới nhanh, chủ động học hỏi                                                    | ☐  | ✅  | ☐  |
-| 3   | **Tính chủ động**                         | Tự tìm việc để làm, không chờ giao việc                                                           | ✅  | ☐  | ☐  |
-| 4   | **Tinh thần trách nhiệm**                 | Hoàn thành đúng hạn, đảm bảo chất lượng                                                           | ✅  | ☐  | ☐  |
-| 5   | **Kỷ luật**                                | Tuân thủ giờ giấc, nội quy và quy trình làm việc                                                  | ☐  | ✅  | ☐  |
-| 6   | **Tinh thần cầu tiến**                    | Sẵn sàng nhận phản hồi và cải thiện bản thân                                                      | ✅  | ☐  | ☐  |
-| 7   | **Giao tiếp**                             | Trình bày ý tưởng rõ ràng, báo cáo công việc mạch lạc                                             | ☐  | ✅  | ☐  |
-| 8   | **Làm việc nhóm**                         | Hợp tác hiệu quả với đồng nghiệp, tham gia tích cực vào hoạt động nhóm                           | ✅  | ☐  | ☐  |
-| 9   | **Tác phong chuyên nghiệp**               | Tôn trọng đồng nghiệp, đối tác và môi trường làm việc                                             | ✅  | ☐  | ☐  |
-| 10  | **Kỹ năng giải quyết vấn đề**             | Nhận diện vấn đề, đưa ra giải pháp phù hợp, có tư duy sáng tạo                                   | ☐  | ✅  | ☐  |
-| 11  | **Đóng góp cho nhóm/dự án**               | Mức độ hiệu quả công việc, đưa ra ý tưởng mới, được ghi nhận bởi nhóm                             | ☐  | ✅  | ☐  |
-| 12  | **Tổng kết chung**                        | Đánh giá tổng quan về toàn bộ quá trình thực tập                                                   | ☐  | ✅  | ☐  |
-
+| No. | Criteria                                  | Description                                                                                       | Good | Fair | Avg |
+| :-- | :---------------------------------------- | :------------------------------------------------------------------------------------------------ | :--- | :--- | :-- |
+| 1   | **Professional Knowledge & Skills** | Correctly understands the field, applies to practice, proficient with tools, high work quality    | ✅   | ☐    | ☐   |
+| 2   | **Learning Ability** | Absorbs new knowledge quickly, proactive in learning                                              | ☐    | ✅   | ☐   |
+| 3   | **Proactivity (Initiative)** | Self-starts tasks, does not wait for assignment                                                   | ✅   | ☐    | ☐   |
+| 4   | **Sense of Responsibility** | Completes on time, ensures quality                                                                | ✅   | ☐    | ☐   |
+| 5   | **Discipline** | Adheres to punctuality, regulations, and work processes                                           | ☐    | ✅   | ☐   |
+| 6   | **Progressive Spirit** | Willing to receive feedback and improve oneself                                                   | ✅   | ☐    | ☐   |
+| 7   | **Communication** | Presents ideas clearly, reports work coherently                                                   | ☐    | ✅   | ☐   |
+| 8   | **Teamwork** | Cooperates effectively with colleagues, participates actively in team activities                  | ✅   | ☐    | ☐   |
+| 9   | **Professionalism** | Respects colleagues, partners, and the work environment                                           | ✅   | ☐    | ☐   |
+| 10  | **Problem-solving Skills** | Identifies problems, offers suitable solutions, possesses creative thinking                       | ☐    | ✅   | ☐   |
+| 11  | **Contribution to Team/Project** | Work effectiveness, proposes new ideas, recognized by the team                                    | ☐    | ✅   | ☐   |
+| 12  | **Overall Assessment** | General evaluation of the entire internship process                                               | ☐    | ✅   | ☐   |
 ### Needs Improvement
 
 * Improve self-discipline and strictly comply with the company’s regulations.

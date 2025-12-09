@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-
 ### Mục tiêu tuần 2:
 
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.
